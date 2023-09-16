@@ -86,7 +86,7 @@ ol {
   border-radius: 50%;
   line-height: 60px;
   background-color: var(--sclr);
-  z-index: 999;
+  z-index: 99;
 }
 .backToTopBtn i {
   font-size: 24px;
@@ -97,7 +97,7 @@ nav.menuFixed {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1111;
   transition: 0.55s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -144,12 +144,10 @@ nav .menu ul li:hover a::after {
 #banner {
   position: relative;
 }
-
 #banner .banner_img {
   width: 45%;
   margin: 72px 0 144px 0;
 }
-
 #banner .banner_img i {
   font-size: 40px;
   position: absolute;
@@ -162,6 +160,11 @@ nav .menu ul li:hover a::after {
   font-size: 24px;
   font-weight: 400;
   margin: 115px 0 15px 0;
+}
+.banner_cnt .hand {
+  width: 32px;
+  height: 32px;
+  margin: 115px 0 15px 38px;
 }
 .banner_cnt h2 {
   color: var(--pclr);
@@ -258,7 +261,8 @@ nav .menu ul li:hover a::after {
   margin: 0 16px;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #threeidiot h3 {
@@ -280,7 +284,7 @@ nav .menu ul li:hover a::after {
 /* 3idiots Ends here */
 
 /* branding starts here */
-#branding {
+#branding .container {
   border-radius: 30px;
   background: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
   margin-bottom: 147px;
@@ -344,7 +348,8 @@ nav .menu ul li:hover a::after {
   margin: 24px 0;
   border-radius: 20px;
   background: #fff;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 #help .help_icon img {
   margin: 17px 0 1px 0;
@@ -417,6 +422,14 @@ nav .menu ul li:hover a::after {
 #work {
   margin-bottom: 289px;
 }
+#work .timeline h2 {
+  color: var(--pclr);
+  font-family: var(--sfont);
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 79px -122px;
+}
 #work .title {
   width: 30%;
   margin-bottom: 120px;
@@ -432,7 +445,7 @@ nav .menu ul li:hover a::after {
   right: -25px;
   top: -15px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 #work .title::before {
   content: '';
@@ -456,14 +469,6 @@ nav .menu ul li:hover a::after {
   width: 70%;
   padding-left: 55px;
 }
-#work .timeline h2 {
-  color: var(--pclr);
-  font-family: var(--sfont);
-  font-size: 50px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 79px;
-}
 #work .timeline {
   position: relative;
 }
@@ -475,6 +480,7 @@ nav .menu ul li:hover a::after {
   position: absolute;
   left: 30%;
   top: 150px;
+  z-index: 133;
 }
 #work .timeline h4 {
   color: #353535;
@@ -482,6 +488,7 @@ nav .menu ul li:hover a::after {
   font-size: 24px;
   font-weight: 600;
   line-height: 180%; /* 43.2px */
+  margin-bottom: 16px;
 }
 #work .timeline p {
   color: #7a7a7a;
@@ -568,7 +575,8 @@ nav .menu ul li:hover a::after {
   text-align: center;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: relative;
 }
 #service .service_card img {
@@ -589,8 +597,8 @@ nav .menu ul li:hover a::after {
   background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
   opacity: 0;
-  transform: scale(0);
-  transition: 0.45s ease;
+  transform: scale(0.85);
+  transition: 0.65s ease;
 }
 #service .service_card:hover .overlay {
   opacity: 1;
@@ -621,6 +629,9 @@ nav .menu ul li:hover a::after {
 }
 #feedback .feedback_img {
   width: 40%;
+}
+#feedback .feedback_img img {
+  margin: 0 -75px;
 }
 #feedback .feedback_text {
   width: 60%;
@@ -683,14 +694,27 @@ nav .menu ul li:hover a::after {
 #blog .blog_card {
   width: 50%;
 }
+#blog .blog_img {
+  width: 47%;
+  padding: 20px 0;
+}
+#blog .blog_text {
+  width: calc(53% - 68px);
+  margin: 20px 34px;
+}
+#blog .blog_text a {
+  color: #7a7a7a;
+}
+
 #blog .blog_text p {
   color: var(--fclr);
   font-family: var(--pfont);
   font-size: 14px;
   font-weight: 400;
   line-height: 190%; /* 26.6px */
-  padding: 0 25px 0 13px;
+  padding: 0 25px 13px 11px;
 }
+
 #blog .blog_text h4 {
   color: var(--pclr);
   font-family: var(--pfont);
@@ -715,14 +739,6 @@ nav .menu ul li:hover a::after {
 }
 #blog .blog_text span {
   padding: 4px 0 0 10px;
-}
-#blog .blog_img {
-  width: 47%;
-  padding: 20px 0;
-}
-#blog .blog_text {
-  width: calc(53% - 34px);
-  margin: 20px 17px;
 }
 /* blog ends here */
 #email {
@@ -772,13 +788,13 @@ nav .menu ul li:hover a::after {
   line-height: 36px;
 }
 
-.form .email {
+/* .form .email {
   border-radius: 16px;
   background: #fff;
   width: 455px;
   height: 82px;
   flex-shrink: 0;
-}
+} */
 
 .email_form input {
   color: #7a7a7a;
